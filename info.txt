@@ -1,0 +1,13 @@
+{
+    'url': 'http://net.ictbs.io:8080/speedtest/upload.php', 
+    'lat': '13.3633', 
+    'lon': '103.8564', 
+    'name': 'Siem Reap', 
+    'country': 'Cambodia', 
+    'cc': 'KH', 
+    'sponsor': 'ICTBS CO LTD', 
+    'id': '37867', 
+    'host': 'net.ictbs.io:8080', 
+    'd': 231.12867907081804, 
+    'latency': 35.824
+}
