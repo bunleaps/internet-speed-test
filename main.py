@@ -29,6 +29,6 @@ with console.status("[bold green]Preparing...") as status:
 
 [bold cyan]IP:[/bold cyan] [white]{IP}
 [bold cyan]Ping:[/bold cyan] [white]{Ping:.2f} ms
-[bold cyan]Download:[/bold cyan] [white]{Download / 1024 / 1024:.2f} Mbit/s
-[bold cyan]Upload:[/bold cyan] [white]{Upload / 1024 / 1024:.2f} Mbit/s
+[bold cyan]Download:[/bold cyan] [white]{Download / 1024 / 1024:.2f} Mbps
+[bold cyan]Upload:[/bold cyan] [white]{Upload / 1024 / 1024:.2f} Mbps
 """)
