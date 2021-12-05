@@ -4,17 +4,9 @@ from rich.console import Console # type: ignore
 from time import sleep
 
 #Main App
-internet  = speedtest.Speedtest()
-server = internet.get_best_server()
-
-IP = socket.gethostbyname(socket.gethostname())
-Download = internet.download()
-Upload = internet.upload()
-Ping = internet.results.ping
-
 console = Console()
 
-works = ["Get list of servers", "Finding optimal server", "Downloading Speed", "Uploading Speed", "Logging Information"]
+works = ["Get list of servers", "Finding optimal server", "Downloading Speed", "Uploading Speed", "Gathering Information"]
 i = 0
 
 with console.status("[bold green]Preparing...") as status:
@@ -23,6 +15,15 @@ with console.status("[bold green]Preparing...") as status:
         sleep(2)
         console.log(f"{work} [green]: Completed")
         i += 1
+
+    internet  = speedtest.Speedtest()
+    server = internet.get_best_server()
+
+    IP = socket.gethostbyname(socket.gethostname())
+    Download = internet.download()
+    Upload = internet.upload()
+    Ping = internet.results.ping   
+
     console.log(f"""[bold cyan]ID:[/bold cyan] [blue]{server['id']}
 [bold cyan]HOST:[/bold cyan] [blue]{server['host']}
 [bold cyan]SERVER:[/bold cyan] [blue]{server['cc']}
