@@ -1,6 +1,8 @@
 # :tada: INTERNET SPEED TEST
 Measuring your internet speed with a python cli module called `speedtest-cli`.
 
+<img src="https://i.imgur.com/80oz5Mq.gif" alt="App - GIF Recording" width="500"/>
+
 ## 📌 Require
 Make sure you have python version: `3.9.7`
 
